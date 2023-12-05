@@ -2,6 +2,16 @@
 
 Learn how to load JavaScript, CSS, and JSON files into your HTML using ESModules!
 
+- [Loading JavaScript into our HTML](#loading-javascript-into-our-html)
+  - [The OG Way](#the-og-way)
+  - [DOMContentLoaded](#domcontentloaded)
+  - [Defer](#defer)
+- [Dealing with Multiple JavaScript Files](#dealing-with-multiple-javascript-files)
+  - [Order Matters \& Global Variables](#order-matters--global-variables)
+  - [Importing and Exporting with ESModules](#importing-and-exporting-with-esmodules)
+  - [We can't use ESModule with normal scripts](#we-cant-use-esmodule-with-normal-scripts)
+- [Summary](#summary)
+
 ## Loading JavaScript into our HTML
 
 ### The OG Way
@@ -100,7 +110,7 @@ Now...
 * the `index.html` page can start loading the `index.js` file...
 * but it won't execute that code until the DOM is done loading
 
-## Loading Multiple JavaScript Files
+## Dealing with Multiple JavaScript Files
 
 Suppose I wanted to load another JavaScript file. Okay, just add another `<script>`:
 
