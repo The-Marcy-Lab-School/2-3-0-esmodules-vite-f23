@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESModules</title>
     <link rel="shortcut icon" href="#" />
 
+    <title>ESModules</title>
+    <!-- this is called the "entry point" -->
+    <!-- type="module" implies defer -->
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+    <!-- why does this break when index.js is loaded here? -->
     <h1>Hello World!</h1>
+
+    <!-- but it works when loaded at the end of the body? -->
   </body>
 </html>
