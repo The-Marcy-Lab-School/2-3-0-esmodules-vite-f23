@@ -6,7 +6,7 @@ const renderPosts = () => {
     const img = document.createElement('img');
     const caption = document.createElement('p');
 
-    li.id = post.uuid;
+    li.id = post.id;
     img.src = post.src;
     img.alt = post.caption;
     caption.textContent = post.caption;
