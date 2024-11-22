@@ -1,8 +1,11 @@
 // Use curly braces to import a "named export"
-import { renderPosts } from './dom-helpers.js'
+import { renderPosts, updateHeading } from './dom-helpers.js'
+
+import posts from './posts.js';
 
 const main = () => {
-  document.querySelector('h1').textContent = 'Coding is the best';
+  const numPosts = Object.keys(posts).length;
+  updateHeading(`Check out my ${numPosts} posts!`);
   renderPosts();
 }
 

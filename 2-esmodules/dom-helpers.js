@@ -1,6 +1,11 @@
 // TODO: Import the posts here
 
-// TODO: Add named export keyword to this function
+// TODO: Add the `export` keyword to these functions to make them each a "named export"
+const updateHeading = (msg) => {
+  const h1 = document.querySelector('h1');
+  h1.textContent = msg;
+}
+
 const renderPosts = () => {
   const postsContainer = document.querySelector('#posts-container');
 
@@ -9,7 +14,7 @@ const renderPosts = () => {
     const img = document.createElement('img');
     const caption = document.createElement('p');
 
-    li.id = post.uuid;
+    li.id = post.id;
     img.src = post.src;
     img.alt = post.caption;
     caption.textContent = post.caption;

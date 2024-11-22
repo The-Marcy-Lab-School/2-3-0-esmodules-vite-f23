@@ -1,7 +1,9 @@
-// TODO: Import render posts
+// TODO: Import renderPosts and updateHeading from dom-helpers.js
+// TODO: Import posts from posts.js
 
 const main = () => {
-  document.querySelector('h1').textContent = 'Coding is the best';
+  const numPosts = Object.keys(posts).length;
+  updateHeading(`Check out my ${numPosts} posts!`);
 
   renderPosts();
 }
