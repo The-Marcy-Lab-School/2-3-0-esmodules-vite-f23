@@ -17,4 +17,5 @@ const posts = {
   }
 };
 
+// Exporting a single value
 module.exports = posts;
